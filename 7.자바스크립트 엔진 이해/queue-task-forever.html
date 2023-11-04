@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click하면 무한 반복🤮</button>
+    <script>
+      const button = document.querySelector('button');
+      button.addEventListener('click', () => {
+        while (true) {
+          // 무한 반복
+          // event loop가 콜스택에 머물러 Render로 넘어갈수없어
+          // 화면 업데이트가 멈춘다.
+        }
+      });
+    </script>
+  </body>
+</html>
